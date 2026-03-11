@@ -13,8 +13,8 @@
 
         <a href="{{ route('article.details', $article->id) }}">
             <x-article 
-                :title="$article['title']" 
-                :description="$article['description']" 
+                :title="$article->title" 
+                :description="$article->description" 
             />
         </a>
     @empty
